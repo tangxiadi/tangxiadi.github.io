@@ -8,9 +8,8 @@ clip<%tmp%\clip.tmp
 )
 del %tmp%\clip.tmp
 del %tmp%\status.tmp
-Pause
 git add .
 git commit -a -m "Update"
 git push
 echo.
-echo COMPLETE! & pause 1>nul
+cls & echo Push complete, image URL has been copied to the clipboard! & pause 1>nul
