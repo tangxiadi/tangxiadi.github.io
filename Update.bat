@@ -1,9 +1,12 @@
 @echo off
-git status >status.tmp
-for /F "eol=  tokens=1,2,3 delims=	/" %%i in (status.tmp) do (
-if %%i == images echo %%j
+git status >%tmp%\status.tmp
+for /F "eol=  tokens=1,2,3 delims=	/" %%i in (%tmp%\status.tmp) do (
+if %%i == images (
+echo http://tangxiadi.github.io/images/%%j
+
 )
-del status.tmp
+)
+del %tmp%\status.tmp
 Pause
 git add .
 git commit -a -m "Update"
