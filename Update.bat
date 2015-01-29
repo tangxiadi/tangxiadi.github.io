@@ -1,7 +1,7 @@
 @echo off
 git status >status.tmp
 for /F "eol=  tokens=1,2,3 delims=	/" %%i in (status.tmp) do (
-echo %%i %%j %%k
+if %%i == images echo %%j
 )
 del status.tmp
 Pause
