@@ -2,4 +2,4 @@
 git add .
 git commit -a -m "Update"
 git push
-pause
+pause 1>nul
