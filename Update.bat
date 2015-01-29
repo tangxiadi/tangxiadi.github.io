@@ -1,9 +1,10 @@
 @echo off
 git status >status.tmp
-FOR /F "eol=  tokens=1,2,3 delims=	/" %%i in (status.tmp) do echo %%i %%j %%k
+for /F "eol=  tokens=1,2,3 delims=	/" %%i in (status.tmp) do (
+echo %%i %%j %%k
+)
+del status.tmp
 Pause
-Del test.txt
-
 git add .
 git commit -a -m "Update"
 git push
