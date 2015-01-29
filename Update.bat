@@ -6,8 +6,8 @@ echo http://tangxiadi.github.io/images/%%j>%tmp%\clip.tmp
 clip<%tmp%\clip.tmp
 )
 )
-del %tmp%\clip.tmp
-del %tmp%\status.tmp
+del %tmp%\clip.tmp 2>nul
+del %tmp%\status.tmp 2>nul
 git add .
 git commit -a -m "Update"
 git push
