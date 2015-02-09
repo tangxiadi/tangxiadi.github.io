@@ -11,5 +11,6 @@ del %tmp%\status.tmp 2>nul
 git add .
 git commit -a -m "Update"
 git push
+exit
 echo.
 cls & echo Push complete, image URL has been copied to the clipboard! & pause 1>nul
