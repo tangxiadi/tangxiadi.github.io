@@ -3,3 +3,4 @@ for /F "eol=  tokens=1,2,3 delims=	/" %%i in ('git status') do if %%i == images 
 git add .
 git commit -a -m "Update"
 git push
+::pause
