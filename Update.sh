@@ -7,4 +7,4 @@ fi
 git add .
 git commit -a -m "Update"
 git push
-read -p "Press any key to continue." var
+#read -p "Press any key to continue." var
