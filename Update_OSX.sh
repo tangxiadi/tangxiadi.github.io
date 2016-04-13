@@ -1,6 +1,6 @@
 #!/bin/bash
 if
-str=`git status|grep "	images"`
+str=`git status|grep ''$'\timage'`
 then
 echo "http://tangxiadi.github.io/"${str:1}|pbcopy
 fi
